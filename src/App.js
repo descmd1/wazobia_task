@@ -10,7 +10,7 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material"
 const App = () => {
   const location = useLocation()
   const navigate = useNavigate()
-
+  // adding pagination
   const pages = [
     { path: "/", label: "1" },
     { path: "/video", label: "2" },
