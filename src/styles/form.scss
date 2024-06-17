@@ -1,0 +1,86 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  padding: 50px 150px;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .form-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    border: 1px solid rgb(192, 190, 190);
+    padding: 30px 80px;
+  }
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    pad: 0;
+  }
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 150px;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+  button {
+    cursor: pointer;
+    background-color: rgb(233, 252, 241);
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.app-container {
+  text-align: center;
+}
+
+.pagination-buttons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.pagination-buttons li {
+  display: inline;
+  cursor: pointer;
+}
+
+.pagination-buttons a {
+  padding: 3px;
+  text-decoration: none;
+  color: #7e7c7c;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.pagination-buttons a:hover {
+  background-color: #dfe2e2;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.pagination-buttons .active {
+  background-color: #dfe2e2;
+  border-radius: 50%;
+}

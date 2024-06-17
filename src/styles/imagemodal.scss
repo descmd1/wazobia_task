@@ -1,0 +1,148 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  // overflow: auto;
+  -webkit-box-shadow: -3px -2px 63px -35px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: -3px -2px 63px -35px rgba(0, 0, 0, 0.47);
+  box-shadow: -3px -2px 63px -35px rgba(0, 0, 0, 0.47);
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    @media screen and (max-width: 760px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 3px;
+      }
+
+      h4 {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2px;
+      }
+
+      h5 {
+        font-size: 12px;
+        font-weight: 200;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: 1px;
+      }
+    }
+
+    .upload-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      border: dotted lightgreen;
+      height: 170px;
+      background-color: #fafafa;
+      .file-input-label {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .upload-button {
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+        background-color: white;
+        color: #000;
+        border: 0.3px solid lightgreen;
+        border-radius: 4px;
+        margin: 10px;
+        width: 30%;
+
+        @media screen and (max-width: 760px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .btn-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+
+      @media screen and (max-width: 760px) {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .confirm-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #19691c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        width: 10%;
+        @media screen and (max-width: 760px) {
+          width: 20%;
+        }
+      }
+
+      .cancel-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: white;
+        color: #000;
+        border: 0.2px solid lightgreen;
+        border-radius: 4px;
+        width: 10%;
+
+        @media screen and (max-width: 760px) {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
