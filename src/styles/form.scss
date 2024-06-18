@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +11,7 @@
   @media screen and (max-width: 760px) {
     width: 100%;
     padding: 5px;
+    overflow: hidden;
   }
 
   .form-box {
@@ -24,7 +25,8 @@
   }
   @media screen and (max-width: 760px) {
     width: 100%;
-    pad: 0;
+    padding: 5px;
+    overflow-y: scroll;
   }
 }
 
